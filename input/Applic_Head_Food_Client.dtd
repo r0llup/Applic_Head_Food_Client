@@ -1,0 +1,15 @@
+<!ELEMENT Menu (Entree+,Plat+,Dessert+)>
+<!ATTLIST Menu name #PCDATA #REQUIRED>
+<!ATTLIST Menu vedetteDuJour #PCDATA "Jean-Claude Dusse">
+<!ELEMENT Entree (Ingredient+) >
+<!ATTLIST Entree name #PCDATA #REQUIRED>
+<!ATTLIST Entree type type (Chaud|Froid) "Froid">
+<!ATTLIST Ingredient value #PCDATA #REQUIRED>
+<!ELEMENT Plat (Ingredient+)>
+<!ATTLIST Plat name #PCDATA #REQUIRED>
+<!ATTLIST Plat type type (Chaud|Froid) "Chaud">
+<!ATTLIST Ingredient value #PCDATA #REQUIRED>
+<!ELEMENT Dessert (Ingredient+)>
+<!ATTLIST Dessert name #PCDATA #REQUIRED>
+<!ATTLIST Dessert type type (Chaud|Froid) "Froid">
+<!ATTLIST Ingredient value #PCDATA #REQUIRED>
